@@ -1,6 +1,19 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { ArrowRight, ArrowDown, Star, Award, Users, Zap, CheckCircle, Palette, Lightbulb, Rocket } from "lucide-react"
+import {
+  ArrowRight,
+  ArrowDown,
+  Star,
+  Users,
+  Zap,
+  CheckCircle,
+  Palette,
+  Lightbulb,
+  Rocket,
+  Play,
+  ImageIcon,
+  Layers,
+} from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -8,7 +21,7 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 md:p-8 animate-fade-in backdrop-blur-sm bg-black/80 sticky top-0 z-50">
         <div className="text-xl font-bold hover:scale-110 transition-all duration-300 cursor-pointer">
-          <span className="text-white">Logo</span>
+          <span className="text-white">Qasim GFX</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
           <a
@@ -62,7 +75,7 @@ export default function HomePage() {
             <div className="animate-slide-in-left">
               <div className="inline-flex items-center px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-full mb-6 animate-fade-in-up backdrop-blur-sm">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-                <span className="text-gray-300 text-sm">Available for freelance projects</span>
+                <span className="text-gray-300 text-sm">DM for Orders - Available Now</span>
               </div>
               <h1
                 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up leading-tight"
@@ -77,39 +90,39 @@ export default function HomePage() {
                 className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up max-w-lg"
                 style={{ animationDelay: "0.4s" }}
               >
-                I'm <span className="text-white font-semibold">Fatima Kiran Chatha</span>, a passionate graphic designer
-                specializing in
-                <span className="text-purple-400"> logo design</span>,{" "}
-                <span className="text-pink-400">calligraphy</span>, and
-                <span className="text-blue-400"> brand identity</span> that elevates your business.
+                I'm <span className="text-white font-semibold">Qasim</span>, a passionate{" "}
+                <span className="text-purple-400">Graphic Designer</span> |{" "}
+                <span className="text-pink-400">Video Editor</span> specializing in
+                <span className="text-blue-400"> Thumbnails, Logos & More</span> that elevates your content and brand.
               </p>
               <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
-                  <Star className="w-4 h-4 text-yellow-400" />
-                  <span className="text-white text-sm">Logo Expert</span>
+                  <Play className="w-4 h-4 text-red-400" />
+                  <span className="text-white text-sm">Video Editor</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
-                  <Award className="w-4 h-4 text-purple-400" />
-                  <span className="text-white text-sm">50+ Projects</span>
+                  <ImageIcon className="w-4 h-4 text-purple-400" />
+                  <span className="text-white text-sm">Thumbnails & More</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <Users className="w-4 h-4 text-blue-400" />
-                  <span className="text-white text-sm">30+ Clients</span>
+                  <span className="text-white text-sm">164 Followers</span>
                 </div>
               </div>
               <div className="flex gap-4 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
                 <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 px-8 py-3">
-                  View Portfolio
+                  My Portfolio
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
                 <Button
                   variant="outline"
                   className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent transition-all duration-300 px-8 py-3"
                 >
-                  Let's Talk
+                  DM for Orders
                 </Button>
               </div>
             </div>
+
             <div className="relative animate-slide-in-right">
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-6">
@@ -172,6 +185,7 @@ export default function HomePage() {
               // style={{ animationDelay: "1s" }}
               ></div>
             </div>
+
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
@@ -188,27 +202,27 @@ export default function HomePage() {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                50+
+                122
               </div>
-              <div className="text-gray-400 text-sm">Projects Completed</div>
+              <div className="text-gray-400 text-sm">Posts Created</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
               style={{ animationDelay: "0.2s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                30+
+                164
               </div>
-              <div className="text-gray-400 text-sm">Happy Clients</div>
+              <div className="text-gray-400 text-sm">Followers</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
               style={{ animationDelay: "0.3s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                3+
+                291
               </div>
-              <div className="text-gray-400 text-sm">Years Experience</div>
+              <div className="text-gray-400 text-sm">Following</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
@@ -238,14 +252,14 @@ export default function HomePage() {
               <div className="relative group">
                 <div className="w-full max-w-md h-96 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg hover:scale-105 transition-transform duration-500 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Fatima Kiran Chatha | Your Picture"
+                    src="https://hebbkx1anhila5yf.publi.blob.vercel-storage.com/image-uSnnfyGDsr5eII4t4FphfCbrbVkggO.png"
+                    alt="Qasim GFX - Graphic Designer & Video Editor"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                     <div className="text-center w-full">
-                      <p className="text-white font-semibold text-lg">Fatima Kiran Chatha</p>
-                      <p className="text-gray-300 text-sm">Graphic Designer & Logo Expert</p>
+                      <p className="text-white font-semibold text-lg">Qasim GFX</p>
+                      <p className="text-gray-300 text-sm">Graphic Designer & Video Editor</p>
                     </div>
                   </div>
                 </div>
@@ -253,65 +267,67 @@ export default function HomePage() {
             </div>
             <div className="animate-slide-in-right">
               <p className="text-gray-400 mb-4 animate-fade-in-up uppercase tracking-wider text-sm">
-                Expert Logo Designer
+                Graphic Designer | Video Editor
               </p>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in-up text-white"
                 style={{ animationDelay: "0.2s" }}
               >
-                Fatima Kiran Chatha, <span className="text-gray-400">Your Designer</span>
+                Qasim_GFX_43, <span className="text-gray-400">Your Creative Partner</span>
               </h2>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-                With creative excellence and extensive freelance experience across multiple platforms.
+                With creative excellence and extensive freelance experience, showcasing work across multiple platforms
+                including my Behance portfolio.
               </p>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-                I'm Fatima Kiran Chatha, a dedicated <span className="text-white font-semibold">Graphic Designer</span>{" "}
-                specializing in logo design and brand identity. I create compelling visual solutions that help
-                businesses stand out and connect with their target audience through thoughtful design and creative
-                excellence.
+                I'm Qasim, a dedicated <span className="text-white font-semibold">Graphic Designer | Video Editor</span>{" "}
+                specializing in <span className="text-purple-400">Thumbnails, Logos & More</span>. I create compelling
+                visual content that helps creators and businesses stand out and connect with their audience through
+                engaging design and professional video editing. <span className="text-blue-400">DM for Orders</span> -
+                let's bring your vision to life!
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Star className="w-4 h-4 text-yellow-400" />
-                    <span className="text-white font-medium">Logo Design</span>
+                    <Play className="w-4 h-4 text-red-400" />
+                    <span className="text-white font-medium">Video Editing</span>
                   </div>
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Award className="w-4 h-4 text-blue-400" />
-                    <span className="text-white font-medium">Calligraphy</span>
+                    <ImageIcon className="w-4 h-4 text-blue-400" />
+                    <span className="text-white font-medium">Thumbnails & More</span>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Users className="w-4 h-4 text-green-400" />
-                    <span className="text-white font-medium">Brand Identity</span>
+                    <Star className="w-4 h-4 text-yellow-400" />
+                    <span className="text-white font-medium">Logos & More</span>
                   </div>
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Zap className="w-4 h-4 text-purple-400" />
-                    <span className="text-white font-medium">Mascot Design</span>
+                    <Layers className="w-4 h-4 text-purple-400" />
+                    <span className="text-white font-medium">Social Media Posts</span>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: "1s" }}>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Freelance Designer</span>
-                  <span className="text-gray-400">Upwork</span>
+                  <span className="text-white font-medium">YouTube Thumbnail Designer</span>
+                  <span className="text-gray-400">Freelance</span>
                   <span className="text-gray-500">2021</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Logo Specialist</span>
-                  <span className="text-gray-400">Fiverr</span>
+                  <span className="text-white font-medium">Video Editor</span>
+                  <span className="text-gray-400">Content Creators</span>
                   <span className="text-gray-500">2022</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Brand Designer</span>
-                  <span className="text-gray-400">99designs</span>
+                  <span className="text-white font-medium">Graphic Designer</span>
+                  <span className="text-gray-400">Social Media</span>
                   <span className="text-gray-500">2023</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Graphic Designer</span>
+                  <span className="text-white font-medium">Creative Portfolio</span>
                   <span className="text-gray-400">Behance Portfolio</span>
                   <span className="text-gray-500">2024</span>
                 </div>
@@ -321,7 +337,7 @@ export default function HomePage() {
                 variant="outline"
                 className="mt-8 border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
               >
-                Connect with me
+                DM for Orders
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
@@ -492,9 +508,10 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="mb-16 animate-fade-in-up text-center">
             <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">Design Services</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Design Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Creative Services</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Comprehensive design services to elevate your brand and create lasting visual impact for your business.
+              Comprehensive design and video editing services to elevate your content and create lasting visual impact
+              for your brand.
             </p>
           </div>
 
@@ -503,18 +520,18 @@ export default function HomePage() {
               className="bg-gray-900/80 border-gray-800 p-8 hover:scale-105 hover:bg-gray-800/80 transition-all duration-500 animate-fade-in-up group hover:shadow-xl hover:shadow-white/10 backdrop-blur-sm"
               style={{ animationDelay: "0.2s" }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <ArrowRight className="w-6 h-6" />
+              <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Play className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Logo Design</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Thumbnail Design</h3>
               <p className="text-gray-400 mb-6">
-                Creating memorable and impactful logos that represent your brand identity and values perfectly.
+                Eye-catching and click-worthy YouTube thumbnails that boost your video views and engagement rates.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Learn More
+                DM for Orders
               </Button>
             </Card>
 
@@ -523,17 +540,17 @@ export default function HomePage() {
               style={{ animationDelay: "0.4s" }}
             >
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Users className="w-6 h-6" />
+                <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Brand Identity</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Video Editing</h3>
               <p className="text-gray-400 mb-6">
-                Developing cohesive brand identities that reflect your values and resonate with your target audience.
+                Professional video editing services that transform your raw footage into engaging, polished content.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Learn More
+                DM for Orders
               </Button>
             </Card>
 
@@ -541,25 +558,25 @@ export default function HomePage() {
               className="bg-gray-900/80 border-gray-800 p-8 hover:scale-105 hover:bg-gray-800/80 transition-all duration-500 animate-fade-in-up group hover:shadow-xl hover:shadow-white/10 backdrop-blur-sm"
               style={{ animationDelay: "0.6s" }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Award className="w-6 h-6" />
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <Star className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Calligraphy & Typography</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Logos & More</h3>
               <p className="text-gray-400 mb-6">
-                Beautiful custom calligraphy and typography solutions for unique branding and artistic projects.
+                Creating memorable logos and brand identities that represent your business values and vision perfectly.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Learn More
+                DM for Orders
               </Button>
             </Card>
           </div>
 
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <Button className="bg-white text-black hover:bg-gray-200 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/30">
-              Contact Now
+              DM for Orders
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
@@ -570,8 +587,8 @@ export default function HomePage() {
       <footer className="px-6 md:px-8 py-12 border-t border-gray-800 animate-fade-in-up bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-xl font-bold mb-4 md:mb-0 hover:scale-105 transition-transform duration-300 cursor-pointer">
-              <span className="text-white">Logo</span>
+            <div className="text-xl font-bold mb-4 md:mb-0 hover:scale-110 transition-transform duration-300 cursor-pointer">
+              <span className="text-white">Qasim GFX</span>
             </div>
             <div className="flex space-x-6">
               <a
@@ -597,9 +614,17 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Fatima Kiran Chatha. All rights reserved.</div>
+          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Qasim GFX. All rights reserved.</div>
         </div>
       </footer>
     </div>
   )
 }
+
+
+
+
+
+
+
+
