@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 md:p-8 animate-fade-in backdrop-blur-sm bg-black/80 sticky top-0 z-50">
         <div className="text-xl font-bold hover:scale-110 transition-all duration-300 cursor-pointer">
-          <span className="text-white">Ishmaan Raza</span>
+          <span className="text-white">Rizvi Dar</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
           <a
@@ -55,7 +55,7 @@ export default function HomePage() {
           variant="outline"
           className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
         >
-          Let's Work Together
+          Commission Artwork
         </Button>
       </nav>
 
@@ -73,39 +73,38 @@ export default function HomePage() {
             <div className="animate-slide-in-left">
               <div className="inline-flex items-center px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-full mb-6 animate-fade-in-up backdrop-blur-sm">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-                <span className="text-gray-300 text-sm">Available for Personal Branding Projects</span>
+                <span className="text-gray-300 text-sm">Available for Custom Design Commissions</span>
               </div>
               <h1
                 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up leading-tight"
                 style={{ animationDelay: "0.2s" }}
               >
-                <span className="text-white">Content</span>{" "}
+                <span className="text-white">Digital</span>{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 animate-gradient-text">
-                  Marketing Expert
+                  Creator
                 </span>
               </h1>
               <p
                 className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up max-w-lg"
                 style={{ animationDelay: "0.4s" }}
               >
-                I'm <span className="text-white font-semibold">Ishmaan Raza</span>, a passionate{" "}
-                <span className="text-purple-400">Content Marketing</span> expert helping coaches and agency owners
-                build their <span className="text-pink-400">Personal Brand</span>. Building my own{" "}
-                <span className="text-blue-400">Video Editing Agency</span> while creating strategic content that
-                converts.
+                I'm <span className="text-white font-semibold">Rizvi Dar</span>, a passionate{" "}
+                <span className="text-purple-400">Digital Creator</span> bringing visions to life with premium digital
+                canvas art. Specializing in <span className="text-pink-400">Custom Designs</span>,{" "}
+                <span className="text-blue-400">Bold Aesthetics</span>, and timeless creativity.
               </p>
               <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <Palette className="w-4 h-4 text-purple-400" />
-                  <span className="text-white text-sm">Content Marketing</span>
+                  <span className="text-white text-sm">Custom Designs</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <ImageIcon className="w-4 h-4 text-pink-400" />
-                  <span className="text-white text-sm">Personal Branding</span>
+                  <span className="text-white text-sm">Digital Canvas Art</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <Users className="w-4 h-4 text-blue-400" />
-                  <span className="text-white text-sm">7,702 Followers</span>
+                  <span className="text-white text-sm">51 Followers</span>
                 </div>
               </div>
               <div className="flex gap-4 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
@@ -117,7 +116,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent transition-all duration-300 px-8 py-3"
                 >
-                  Let's Work Together
+                  Commission Artwork
                 </Button>
               </div>
             </div>
@@ -132,7 +131,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Content Strategy</span>
+                      <span className="text-white font-semibold">Digital Art</span>
                     </div>
                   </Card>
                   <Card className="bg-gray-900/80 border-gray-800 p-6 aspect-square hover:bg-gray-800/80 transition-all duration-500 animate-float">
@@ -142,7 +141,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Personal Branding</span>
+                      <span className="text-white font-semibold">Custom Designs</span>
                     </div>
                   </Card>
                 </div>
@@ -154,7 +153,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Video Editing</span>
+                      <span className="text-white font-semibold">Bold Aesthetics</span>
                     </div>
                   </Card>
                   <Card className="bg-gray-900/80 border-gray-800 p-6 aspect-square hover:bg-gray-800/80 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/20 animate-float">
@@ -164,7 +163,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Agency Growth</span>
+                      <span className="text-white font-semibold">Creative Vision</span>
                     </div>
                   </Card>
                 </div>
@@ -188,7 +187,7 @@ export default function HomePage() {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                356
+                28
               </div>
               <div className="text-gray-400 text-sm">Posts Created</div>
             </div>
@@ -197,7 +196,7 @@ export default function HomePage() {
               style={{ animationDelay: "0.2s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                7,702
+                51
               </div>
               <div className="text-gray-400 text-sm">Followers</div>
             </div>
@@ -206,7 +205,7 @@ export default function HomePage() {
               style={{ animationDelay: "0.3s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                489
+                0
               </div>
               <div className="text-gray-400 text-sm">Following</div>
             </div>
@@ -225,13 +224,6 @@ export default function HomePage() {
 
       {/* About Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-32 h-32 border border-white rounded-full animate-spin-slow"></div>
-          <div
-            className="absolute bottom-20 right-20 w-24 h-24 border border-white rounded-full animate-spin-slow"
-            style={{ animationDelay: "2s" }}
-          ></div>
-        </div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
@@ -244,78 +236,75 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                     <div className="text-center w-full">
-                      <p className="text-white font-semibold text-lg">Ishmaan Raza</p>
-                      <p className="text-gray-300 text-sm">Content Marketing Expert</p>
+                      <p className="text-white font-semibold text-lg">Rizvi Dar</p>
+                      <p className="text-gray-300 text-sm">Digital Creator</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="animate-slide-in-right">
-              <p className="text-gray-400 mb-4 animate-fade-in-up uppercase tracking-wider text-sm">
-                Content Marketing Expert
-              </p>
+              <p className="text-gray-400 mb-4 animate-fade-in-up uppercase tracking-wider text-sm">Digital Creator</p>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in-up text-white"
                 style={{ animationDelay: "0.2s" }}
               >
-                Ishmaan Raza, <span className="text-gray-400">Your Growth Partner</span>
+                Rizvi Dar, <span className="text-gray-400">Your Creative Partner</span>
               </h2>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-                With strategic content marketing and personal branding expertise, I help coaches and agency owners build
-                powerful personal brands that attract their ideal clients and drive business growth.
+                With expertise in digital art and custom design, I help bring your creative visions to life through
+                premium digital canvas art that captures bold aesthetics and timeless creativity.
               </p>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-                I'm Ishmaan Raza, a dedicated <span className="text-white font-semibold">Content Marketing Expert</span>{" "}
-                specializing in <span className="text-purple-400">Personal Branding</span>,{" "}
-                <span className="text-pink-400">Content Strategy</span>, and{" "}
-                <span className="text-blue-400">Video Editing Services</span>. I help coaches and agency owners build
-                their personal brand while building my own video editing agency.{" "}
-                <span className="text-blue-400">Let's work together</span> to scale your business!
+                I'm Rizvi Dar, a dedicated <span className="text-white font-semibold">Digital Creator</span>{" "}
+                specializing in <span className="text-purple-400">Custom Designs</span>,{" "}
+                <span className="text-pink-400">Bold Aesthetics</span>, and{" "}
+                <span className="text-blue-400">Timeless Creativity</span>. I bring visions to life with premium digital
+                canvas art that tells your story. <span className="text-blue-400">DM for commissions!</span> 🎨📧
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
                     <Palette className="w-4 h-4 text-purple-400" />
-                    <span className="text-white font-medium">Content Marketing</span>
+                    <span className="text-white font-medium">Custom Designs</span>
                   </div>
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
                     <ImageIcon className="w-4 h-4 text-pink-400" />
-                    <span className="text-white font-medium">Personal Branding</span>
+                    <span className="text-white font-medium">Digital Canvas Art</span>
                   </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
                     <Play className="w-4 h-4 text-blue-400" />
-                    <span className="text-white font-medium">Video Editing Agency</span>
+                    <span className="text-white font-medium">Bold Aesthetics</span>
                   </div>
                   <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
                     <Layers className="w-4 h-4 text-green-400" />
-                    <span className="text-white font-medium">Growth Strategy</span>
+                    <span className="text-white font-medium">Timeless Creativity</span>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: "1s" }}>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Content Marketing Expert</span>
+                  <span className="text-white font-medium">Digital Artist</span>
                   <span className="text-gray-400">Freelance</span>
+                  <span className="text-gray-500">2020</span>
+                </div>
+                <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
+                  <span className="text-white font-medium">Custom Design Specialist</span>
+                  <span className="text-gray-400">Commission Work</span>
                   <span className="text-gray-500">2021</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Personal Branding Specialist</span>
-                  <span className="text-gray-400">Coaches & Agencies</span>
+                  <span className="text-white font-medium">Digital Canvas Artist</span>
+                  <span className="text-gray-400">Premium Art</span>
                   <span className="text-gray-500">2022</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Video Content Creator</span>
-                  <span className="text-gray-400">Social Media</span>
-                  <span className="text-gray-500">2023</span>
-                </div>
-                <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Video Editing Agency Owner</span>
-                  <span className="text-gray-400">ishmaan.raza</span>
+                  <span className="text-white font-medium">Creative Director</span>
+                  <span className="text-gray-400">designxraw</span>
                   <span className="text-gray-500">2024</span>
                 </div>
               </div>
@@ -324,7 +313,7 @@ export default function HomePage() {
                 variant="outline"
                 className="mt-8 border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
               >
-                Let's Work Together
+                Commission Artwork
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
@@ -334,22 +323,15 @@ export default function HomePage() {
 
       {/* Process Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-32 h-32 border border-white/20 rounded-full animate-spin-slow"></div>
-          <div
-            className="absolute bottom-20 right-20 w-24 h-24 border border-white/20 rounded-full animate-spin-slow"
-            style={{ animationDelay: "2s" }}
-          ></div>
-        </div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm font-medium">How It Works</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              My Content <span className="text-teal-400">Process</span>
+              My Creative <span className="text-teal-400">Process</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-              A strategic, results-driven approach that helps coaches and agency owners build powerful personal brands
-              that attract their ideal clients and drive business growth.
+              A strategic, creative approach that transforms your vision into stunning digital art with bold aesthetics
+              and timeless creativity that captures your unique story.
             </p>
           </div>
 
@@ -358,17 +340,17 @@ export default function HomePage() {
             <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <div className="flex items-center mb-8">
                 <div className="w-4 h-4 bg-teal-400 rounded-full mr-4 animate-pulse"></div>
-                <h3 className="text-2xl font-bold text-white">Brand Discovery</h3>
+                <h3 className="text-2xl font-bold text-white">Vision Discovery</h3>
               </div>
               <div className="border-l-2 border-teal-400 pl-8 ml-2 space-y-6">
                 <div className="group hover:bg-gray-900/50 p-4 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Personal brand audit and target audience analysis</p>
+                      <p className="text-white font-medium mb-2">Creative consultation and vision alignment</p>
                       <p className="text-gray-300 text-sm">
-                        Understanding your unique value proposition, target audience, and competitive landscape to
-                        create a compelling personal brand strategy.
+                        Understanding your creative vision, style preferences, and project goals to create artwork that
+                        perfectly captures your story.
                       </p>
                     </div>
                   </div>
@@ -377,10 +359,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Content strategy development and planning</p>
+                      <p className="text-white font-medium mb-2">Concept development and style exploration</p>
                       <p className="text-gray-300 text-sm">
-                        Creating a comprehensive content strategy that aligns with your business goals and resonates
-                        with your ideal clients.
+                        Developing initial concepts and exploring different artistic styles to find the perfect
+                        aesthetic for your project.
                       </p>
                     </div>
                   </div>
@@ -389,10 +371,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Platform optimization and brand positioning</p>
+                      <p className="text-white font-medium mb-2">Digital canvas preparation and planning</p>
                       <p className="text-gray-300 text-sm">
-                        Optimizing your social media profiles and establishing a strong brand presence across all
-                        platforms.
+                        Setting up the digital workspace with optimal dimensions, resolution, and color profiles for
+                        premium quality results.
                       </p>
                     </div>
                   </div>
@@ -401,10 +383,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Content calendar and messaging framework</p>
+                      <p className="text-white font-medium mb-2">Timeline and milestone planning</p>
                       <p className="text-gray-300 text-sm">
-                        Developing a strategic content calendar with consistent messaging that builds authority and
-                        trust.
+                        Creating a clear project timeline with key milestones to ensure timely delivery of your custom
+                        artwork.
                       </p>
                     </div>
                   </div>
@@ -419,16 +401,17 @@ export default function HomePage() {
                   className="w-4 h-4 bg-teal-400 rounded-full mr-4 animate-pulse"
                   style={{ animationDelay: "0.5s" }}
                 ></div>
-                <h3 className="text-2xl font-bold text-white">Content Execution</h3>
+                <h3 className="text-2xl font-bold text-white">Creative Execution</h3>
               </div>
               <div className="border-l-2 border-teal-400 pl-8 ml-2 space-y-6">
                 <div className="group hover:bg-gray-900/50 p-4 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
                   <div className="flex items-start space-x-3">
                     <Palette className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">High-converting content creation and copywriting</p>
+                      <p className="text-white font-medium mb-2">Premium digital art creation and refinement</p>
                       <p className="text-gray-300 text-sm">
-                        Creating compelling content that engages your audience and drives meaningful business results.
+                        Creating stunning digital artwork with bold aesthetics and attention to detail that brings your
+                        vision to life.
                       </p>
                     </div>
                   </div>
@@ -437,10 +420,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <Lightbulb className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Professional video editing and production</p>
+                      <p className="text-white font-medium mb-2">Custom design elements and unique touches</p>
                       <p className="text-gray-300 text-sm">
-                        Creating high-quality video content that showcases your expertise and builds trust with your
-                        audience.
+                        Adding personalized design elements and unique creative touches that make your artwork truly
+                        one-of-a-kind.
                       </p>
                     </div>
                   </div>
@@ -449,9 +432,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <Users className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Community building and engagement strategies</p>
+                      <p className="text-white font-medium mb-2">Client collaboration and feedback integration</p>
                       <p className="text-gray-300 text-sm">
-                        Building an engaged community around your personal brand that converts followers into clients.
+                        Working closely with you throughout the process to ensure the final artwork exceeds your
+                        expectations.
                       </p>
                     </div>
                   </div>
@@ -460,10 +444,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <Rocket className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Growth optimization and performance tracking</p>
+                      <p className="text-white font-medium mb-2">Final delivery and format optimization</p>
                       <p className="text-gray-300 text-sm">
-                        Continuous optimization of your personal brand strategy with data-driven insights and ongoing
-                        support.
+                        Delivering your completed artwork in multiple formats optimized for your intended use, with
+                        ongoing support.
                       </p>
                     </div>
                   </div>
@@ -474,17 +458,17 @@ export default function HomePage() {
 
           <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 max-w-2xl mx-auto backdrop-blur-sm">
-              <p className="text-white font-medium mb-4">Ready to build your personal brand?</p>
+              <p className="text-white font-medium mb-4">Ready to bring your vision to life?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-teal-500 text-white hover:bg-teal-600 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/30">
-                  Start Your Brand Journey
+                  Start Your Commission
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
                 <Button
                   variant="outline"
                   className="border-gray-600 text-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 bg-transparent"
                 >
-                  Let's Work Together
+                  Commission Artwork
                 </Button>
               </div>
             </div>
@@ -497,11 +481,11 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="mb-16 animate-fade-in-up text-center">
-            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">Content Services</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Content Marketing Services</h2>
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">Creative Services</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Digital Art Services</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Comprehensive content marketing and personal branding services that help coaches and agency owners build
-              powerful personal brands that attract ideal clients and drive business growth.
+              Comprehensive digital art and design services that bring your creative visions to life with premium
+              digital canvas art, custom designs, and bold aesthetics that tell your unique story.
             </p>
           </div>
 
@@ -513,16 +497,16 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Palette className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Content Marketing</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Custom Designs</h3>
               <p className="text-gray-400 mb-6">
-                Strategic content marketing that positions you as an authority in your niche and attracts your ideal
-                clients consistently.
+                Personalized digital artwork tailored to your vision with bold aesthetics and timeless creativity that
+                captures your unique story.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Let's Work Together
+                Commission Artwork
               </Button>
             </Card>
 
@@ -533,16 +517,16 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <ImageIcon className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Personal Branding</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Digital Canvas Art</h3>
               <p className="text-gray-400 mb-6">
-                Building powerful personal brands for coaches and agency owners that differentiate you from competitors
-                and build trust.
+                Premium digital canvas artwork that brings visions to life with stunning detail and artistic excellence
+                for any space or purpose.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Let's Work Together
+                Commission Artwork
               </Button>
             </Card>
 
@@ -553,23 +537,23 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Play className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Video Editing Agency</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Bold Aesthetics</h3>
               <p className="text-gray-400 mb-6">
-                Professional video editing services that transform your content into engaging, high-converting videos
-                that drive results.
+                Striking visual designs with bold aesthetics and timeless creativity that make a lasting impression and
+                stand out from the crowd.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Let's Work Together
+                Commission Artwork
               </Button>
             </Card>
           </div>
 
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <Button className="bg-white text-black hover:bg-gray-200 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/30">
-              Let's Work Together
+              Commission Artwork
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
@@ -581,7 +565,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-xl font-bold mb-4 md:mb-0 hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <span className="text-white">Ishmaan Raza</span>
+              <span className="text-white">Rizvi Dar</span>
             </div>
             <div className="flex space-x-6">
               <a
@@ -603,11 +587,11 @@ export default function HomePage() {
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 Contact
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
           </div>
-          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Ishmaan Raza. All rights reserved.</div>
+          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Rizvi Dar. All rights reserved.</div>
         </div>
       </footer>
     </div>
