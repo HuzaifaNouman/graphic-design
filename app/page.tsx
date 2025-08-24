@@ -1,66 +1,65 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import {
-  ArrowRight,
-  ArrowDown,
-  Users,
-  CheckCircle,
-  Palette,
-  Lightbulb,
-  Rocket,
-  Play,
-  ImageIcon,
-  Layers,
-} from "lucide-react"
+import { ArrowRight, ArrowDown, Users, CheckCircle, Palette, Lightbulb, Rocket, Play, ImageIcon } from "lucide-react"
 
 export default function HomePage() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 md:p-8 animate-fade-in backdrop-blur-sm bg-black/80 sticky top-0 z-50">
         <div className="text-xl font-bold hover:scale-110 transition-all duration-300 cursor-pointer">
-          <span className="text-white">Creative Studio</span>
+          <span className="text-white">Designer Portfolio</span>
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          <a
-            href="#"
+          <button
+            onClick={() => scrollToSection("services")}
             className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
           >
             Services
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
+            onClick={() => scrollToSection("portfolio")}
             className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
           >
-            Projects
+            Portfolio
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
+            onClick={() => scrollToSection("about")}
             className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
           >
-            Testimonials
+            About
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
+            onClick={() => scrollToSection("contact")}
             className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 relative group"
           >
             Contact
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
+          </button>
         </div>
         <Button
           variant="outline"
           className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
         >
-          Get Design Quote
+          Hire Me
         </Button>
       </nav>
 
-      <section className="px-6 md:px-8 py-16 md:py-24 relative min-h-screen flex items-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900/30 via-black to-gray-900/30"></div>
+      <section id="portfolio" className="px-6 md:px-8 py-16 md:py-24 relative min-h-screen flex items-center">
+        {/* existing code */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900/30"></div>
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full blur-3xl animate-pulse"></div>
           <div
@@ -73,13 +72,13 @@ export default function HomePage() {
             <div className="animate-slide-in-left">
               <div className="inline-flex items-center px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-full mb-6 animate-fade-in-up backdrop-blur-sm">
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-                <span className="text-gray-300 text-sm">Available for Graphic Design Projects</span>
+                <span className="text-gray-300 text-sm">Available for Freelance Projects</span>
               </div>
               <h1
                 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up leading-tight"
                 style={{ animationDelay: "0.2s" }}
               >
-                <span className="text-white">Graphic</span>{" "}
+                <span className="text-white">Your Name</span>{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 animate-gradient-text">
                   Designer
                 </span>
@@ -88,10 +87,9 @@ export default function HomePage() {
                 className="text-xl text-gray-300 mb-8 leading-relaxed animate-fade-in-up max-w-lg"
                 style={{ animationDelay: "0.4s" }}
               >
-                Passionate <span className="text-purple-400">Graphic Designer</span> specializing in{" "}
-                <span className="text-pink-400">Marketing Ideas</span> and{" "}
-                <span className="text-blue-400">Women's Health</span> content. Creating impactful designs that inspire
-                and empower through visual storytelling.
+                Professional <span className="text-purple-400">Graphic Designer</span> and{" "}
+                <span className="text-pink-400">Visual Designer</span>. Freelance expert ready to bring your creative
+                vision to life. <span className="text-blue-400">Let's Talk About Your Business!</span>
               </p>
               <div className="flex flex-wrap gap-4 mb-8 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
@@ -100,15 +98,18 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <ImageIcon className="w-4 h-4 text-pink-400" />
-                  <span className="text-white text-sm">Marketing Ideas</span>
+                  <span className="text-white text-sm">Visual Design</span>
                 </div>
                 <div className="flex items-center space-x-2 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-700">
                   <Users className="w-4 h-4 text-blue-400" />
-                  <span className="text-white text-sm">685 Followers</span>
+                  <span className="text-white text-sm">Happy Clients</span>
                 </div>
               </div>
               <div className="flex gap-4 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
-                <Button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 px-8 py-3">
+                <Button
+                  onClick={() => scrollToSection("portfolio")}
+                  className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/30 px-8 py-3"
+                >
                   View Portfolio
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
@@ -116,7 +117,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent transition-all duration-300 px-8 py-3"
                 >
-                  Get Design Quote
+                  Hire Me
                 </Button>
               </div>
             </div>
@@ -131,7 +132,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Food Design</span>
+                      <span className="text-white font-semibold">Startup</span>
                     </div>
                   </Card>
                   <Card className="bg-gray-900/80 border-gray-800 p-6 aspect-square hover:bg-gray-800/80 transition-all duration-500 animate-float">
@@ -141,7 +142,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Wallpapers</span>
+                      <span className="text-white font-semibold">Reviews</span>
                     </div>
                   </Card>
                 </div>
@@ -153,7 +154,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Design Tips</span>
+                      <span className="text-white font-semibold">LogoFolio</span>
                     </div>
                   </Card>
                   <Card className="bg-gray-900/80 border-gray-800 p-6 aspect-square hover:bg-gray-800/80 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/20 animate-float">
@@ -163,7 +164,7 @@ export default function HomePage() {
                       className="w-full h-full object-cover rounded-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-lg flex items-end p-4">
-                      <span className="text-white font-semibold">Women's Health</span>
+                      <span className="text-white font-semibold">Working</span>
                     </div>
                   </Card>
                 </div>
@@ -174,12 +175,15 @@ export default function HomePage() {
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <ArrowDown className="w-6 h-6 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer" />
+          <ArrowDown
+            onClick={() => scrollToSection("stats")}
+            className="w-6 h-6 text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+          />
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="px-6 md:px-8 py-16 bg-gray-950/50">
+      <section id="stats" className="px-6 md:px-8 py-16 bg-gray-950/50">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div
@@ -187,27 +191,27 @@ export default function HomePage() {
               style={{ animationDelay: "0.1s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                134
+                50+
               </div>
-              <div className="text-gray-400 text-sm">Posts Created</div>
+              <div className="text-gray-400 text-sm">Projects Completed</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
               style={{ animationDelay: "0.2s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                685
+                25+
               </div>
-              <div className="text-gray-400 text-sm">Followers</div>
+              <div className="text-gray-400 text-sm">Happy Clients</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
               style={{ animationDelay: "0.3s" }}
             >
               <div className="text-3xl md:text-4xl font-bold text-white mb-2 group-hover:text-gray-300 transition-colors duration-300">
-                1,194
+                3+
               </div>
-              <div className="text-gray-400 text-sm">Following</div>
+              <div className="text-gray-400 text-sm">Years Experience</div>
             </div>
             <div
               className="text-center animate-fade-in-up group hover:scale-105 transition-all duration-300"
@@ -223,7 +227,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
+      <section id="about" className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
@@ -236,75 +240,56 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
                     <div className="text-center w-full">
-                      <p className="text-white font-semibold text-lg">Creative Designer</p>
-                      <p className="text-gray-300 text-sm">Graphic Design Specialist</p>
+                      <p className="text-white font-semibold text-lg">Your Name</p>
+                      <p className="text-gray-300 text-sm">Freelance Graphic Designer</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="animate-slide-in-right">
-              <p className="text-gray-400 mb-4 animate-fade-in-up uppercase tracking-wider text-sm">Graphic Designer</p>
+              <p className="text-gray-400 mb-4 animate-fade-in-up uppercase tracking-wider text-sm">
+                Freelance Designer
+              </p>
               <h2
                 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in-up text-white"
                 style={{ animationDelay: "0.2s" }}
               >
-                Your Creative <span className="text-gray-400">Design Partner</span>
+                Your Visual <span className="text-gray-400">Design Partner</span>
               </h2>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-                With expertise in graphic design and marketing ideas, I help bring your creative visions to life through
-                impactful designs that inspire and empower, especially in women's health and wellness content.
+                Professional freelance graphic designer specializing in visual design solutions that elevate your brand
+                and business. Ready to transform your creative vision into stunning visual reality.
               </p>
               <p className="text-gray-300 mb-8 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-                Passionate <span className="text-white font-semibold">Graphic Designer</span> specializing in{" "}
-                <span className="text-purple-400">Marketing Ideas</span>,{" "}
-                <span className="text-pink-400">Women's Health</span> content, and{" "}
-                <span className="text-blue-400">Visual Storytelling</span>. Creating designs that make a difference and
-                inspire positive change. <span className="text-blue-400">DM for design projects!</span> 🎨📧
+                <span className="text-white font-semibold">Graphic Designer</span> |{" "}
+                <span className="text-purple-400">Freelance Graphic</span> |{" "}
+                <span className="text-pink-400">Visual Designer</span> |{" "}
+                <span className="text-blue-400">Let's Talk About Your Business!</span>
+                Ready to help you create amazing designs that make your business stand out. 🎨
               </p>
 
-              <div className="grid grid-cols-2 gap-6 mb-8 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Palette className="w-4 h-4 text-purple-400" />
-                    <span className="text-white font-medium">Graphic Design</span>
-                  </div>
-                  <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <ImageIcon className="w-4 h-4 text-pink-400" />
-                    <span className="text-white font-medium">Marketing Ideas</span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Play className="w-4 h-4 text-blue-400" />
-                    <span className="text-white font-medium">Women's Health</span>
-                  </div>
-                  <div className="flex items-center space-x-2 hover:text-gray-100 transition-colors duration-300 cursor-pointer">
-                    <Layers className="w-4 h-4 text-green-400" />
-                    <span className="text-white font-medium">Visual Storytelling</span>
-                  </div>
-                </div>
-              </div>
+              {/* existing code */}
 
               <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: "1s" }}>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Graphic Designer</span>
-                  <span className="text-gray-400">Freelance</span>
+                  <span className="text-white font-medium">Freelance Graphic Designer</span>
+                  <span className="text-gray-400">Self-Employed</span>
                   <span className="text-gray-500">2020</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Marketing Design Specialist</span>
-                  <span className="text-gray-400">Creative Agency</span>
+                  <span className="text-white font-medium">Visual Design Specialist</span>
+                  <span className="text-gray-400">Freelance Platform</span>
                   <span className="text-gray-500">2021</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
-                  <span className="text-white font-medium">Women's Health Content Creator</span>
-                  <span className="text-gray-400">Health Platform</span>
+                  <span className="text-white font-medium">Brand Identity Designer</span>
+                  <span className="text-gray-400">Multiple Clients</span>
                   <span className="text-gray-500">2022</span>
                 </div>
                 <div className="flex justify-between items-center hover:bg-gray-900/50 p-3 rounded-lg transition-all duration-300 border border-transparent hover:border-gray-700">
                   <span className="text-white font-medium">Senior Graphic Designer</span>
-                  <span className="text-gray-400">Creative Studio</span>
+                  <span className="text-gray-400">Design Studio</span>
                   <span className="text-gray-500">2024</span>
                 </div>
               </div>
@@ -313,7 +298,7 @@ export default function HomePage() {
                 variant="outline"
                 className="mt-8 border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
               >
-                Get Design Quote
+                Hire Me
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </div>
@@ -323,6 +308,7 @@ export default function HomePage() {
 
       {/* Process Section */}
       <section className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
+        {/* existing code */}
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16 animate-fade-in-up">
             <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm font-medium">How It Works</p>
@@ -330,8 +316,8 @@ export default function HomePage() {
               My Design <span className="text-teal-400">Process</span>
             </h2>
             <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-              A strategic, creative approach that transforms your marketing ideas into compelling visual designs with a
-              focus on women's health and wellness content that inspires and empowers.
+              A professional, streamlined approach that transforms your business ideas into compelling visual designs.
+              Let's talk about your business and bring your vision to life through expert graphic design.
             </p>
           </div>
 
@@ -347,10 +333,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Brand consultation and design brief development</p>
+                      <p className="text-white font-medium mb-2">Business consultation and project brief development</p>
                       <p className="text-gray-300 text-sm">
-                        Understanding your brand values, target audience, and design goals to create graphics that
-                        resonate with your message and mission.
+                        Understanding your business goals, target audience, and design requirements to create graphics
+                        that effectively communicate your brand message and drive results.
                       </p>
                     </div>
                   </div>
@@ -359,10 +345,10 @@ export default function HomePage() {
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-teal-400 mt-1 flex-shrink-0" />
                     <div>
-                      <p className="text-white font-medium mb-2">Marketing strategy and visual concept planning</p>
+                      <p className="text-white font-medium mb-2">Visual concept and design strategy planning</p>
                       <p className="text-gray-300 text-sm">
-                        Developing marketing ideas and visual concepts that align with your business goals and connect
-                        with your audience effectively.
+                        Developing creative concepts and visual strategies that align with your business objectives and
+                        resonate with your target market through professional design solutions.
                       </p>
                     </div>
                   </div>
@@ -458,7 +444,7 @@ export default function HomePage() {
 
           <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <div className="bg-gray-900/50 border border-gray-700 rounded-lg p-8 max-w-2xl mx-auto backdrop-blur-sm">
-              <p className="text-white font-medium mb-4">Ready to bring your design vision to life?</p>
+              <p className="text-white font-medium mb-4">Ready to elevate your business with professional design?</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button className="bg-teal-500 text-white hover:bg-teal-600 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/30">
                   Start Your Project
@@ -468,7 +454,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-gray-600 text-white hover:bg-white hover:text-black hover:scale-105 transition-all duration-300 bg-transparent"
                 >
-                  Get Design Quote
+                  Hire Me
                 </Button>
               </div>
             </div>
@@ -477,15 +463,17 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
+      <section id="services" className="px-6 md:px-8 py-16 md:py-24 bg-gray-950 relative">
+        {/* existing code */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="mb-16 animate-fade-in-up text-center">
             <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">Design Services</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Graphic Design Services</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Professional Design Services</h2>
             <p className="text-gray-300 max-w-2xl mx-auto">
-              Comprehensive graphic design services specializing in marketing ideas and women's health content that
-              inspire, educate, and empower your audience through impactful visual storytelling.
+              Comprehensive graphic and visual design services for businesses looking to elevate their brand presence.
+              From logos to complete brand identities, let's talk about your business needs and create something amazing
+              together.
             </p>
           </div>
 
@@ -497,16 +485,16 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Palette className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Marketing Graphics</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Logo & Brand Design</h3>
               <p className="text-gray-400 mb-6">
-                Creative marketing materials and promotional graphics that capture attention and drive engagement for
-                your brand and business goals.
+                Professional logo design and complete brand identity packages that make your business stand out and
+                create lasting impressions with your target audience.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Get Design Quote
+                Get Quote
               </Button>
             </Card>
 
@@ -517,16 +505,16 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <ImageIcon className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Women's Health Content</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Visual Design</h3>
               <p className="text-gray-400 mb-6">
-                Specialized graphic design for women's health and wellness content that educates, inspires, and empowers
-                women to make informed decisions.
+                Creative visual design solutions including marketing materials, social media graphics, and promotional
+                content that effectively communicate your business message.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Get Design Quote
+                Get Quote
               </Button>
             </Card>
 
@@ -537,23 +525,23 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 text-white rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <Play className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-white">Visual Storytelling</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">Business Graphics</h3>
               <p className="text-gray-400 mb-6">
-                Compelling visual narratives and design tips that communicate your message effectively and create
-                lasting connections with your audience.
+                Professional business graphics and presentations that help you communicate your ideas effectively and
+                make a strong impression in meetings and proposals.
               </p>
               <Button
                 variant="outline"
                 className="border-gray-600 text-white hover:bg-white hover:text-black bg-transparent hover:scale-105 transition-all duration-300 w-full"
               >
-                Get Design Quote
+                Get Quote
               </Button>
             </Card>
           </div>
 
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: "0.8s" }}>
             <Button className="bg-white text-black hover:bg-gray-200 hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-white/30">
-              Get Design Quote
+              Hire Me
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
@@ -561,11 +549,11 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 md:px-8 py-12 border-t border-gray-800 animate-fade-in-up bg-black">
+      <footer id="contact" className="px-6 md:px-8 py-12 border-t border-gray-800 animate-fade-in-up bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-xl font-bold mb-4 md:mb-0 hover:scale-110 transition-transform duration-300 cursor-pointer">
-              <span className="text-white">Creative Studio</span>
+              <span className="text-white">Designer Portfolio</span>
             </div>
             <div className="flex space-x-6">
               <a
@@ -582,16 +570,16 @@ export default function HomePage() {
                 Terms
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a
-                href="#"
+              <button
+                onClick={() => scrollToSection("contact")}
                 className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-105 relative group"
               >
                 Contact
-                <span className="absolute -bottom-1 left-0 w-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
-              </a>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </button>
             </div>
           </div>
-          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Creative Studio. All rights reserved.</div>
+          <div className="text-center text-gray-500 text-sm mt-8">© 2024 Designer Portfolio. All rights reserved.</div>
         </div>
       </footer>
     </div>
